@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Angular 1</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+		</script>
+		
+		<script src="app.js"></script>
+		<script src="ctrl.js"></script>
+	
+	</head>
+	
+	<body>
+		
+		
+		<div ng-app="fisrtApp" ng-controller="firstCtrl">
+		
+			<label>Fisrt name</label><input type="text"  ng-model="firstName" /><br>
+			<label>Last name</label><input type="text"  ng-model="lastName" /><br>
+			<label>Where do you live ?? </label><input type="text"  ng-model="city"/><br>
+			<label>Sex: </label><select ng-model="sex" ng-click="setSelectedSex()">
+				<option value=""> selectionnez votre sex</option>
+				<option ng-repeat="sex in sexes" value="{{sex}}">{{sex}}</option>
+			</select>
+			
+			
+			<p> Welcome Mister {{firstName +" "+ lastName}}</p>
+			<p> you live in  {{city}}</p>
+			<p> sex:  {{message}}</p>
+			
+		</div>
+		
+		
+	</body>
+</html>
