@@ -1,0 +1,31 @@
+.expander {
+    border: 1px solid black; 
+    width: 250px;
+}
+
+.expander > .title { 
+    background-color: black; color: white;
+    padding: .1em .3em; cursor: pointer;
+}
+
+.expander > .body {
+    padding: .1em .3em; 
+}
+
+table,th,tr,td {
+	border: 1px blue solid;
+	
+}
+
+table{
+	resize: both;
+	overflow: auto;
+}
+.dim{
+	height:300px;
+	width:300px;
+	color:white;
+	background-color:green;
+	text-align:center;
+	
+}

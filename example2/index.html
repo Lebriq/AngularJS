@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Angular 2</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="ctrl.js"></script>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		
+		
+		<div   ng-app="app">
+			<table my-draggable>
+				<tr><th>Nom</th><th>Prenom</th></tr>
+				<tr><td>Nom</td><td>Prenom</td></tr>
+				<tr><td>Nom</td><td>Prenom</td></tr>
+				<tr><td>Nom</td><td>Prenom</td></tr>
+			</table>
+			
+			<div ng-controller="secondCtrl"   my-draggable>
+				<message></message>
+			</div>
+		
+			<div ng-controller="SomeController"  my-draggable>
+				<expander class="expander" expander-title="title">
+					{{text}}
+				</expander>
+			</div>
+			
+			<div class="dim" my-Dimensionnable my-draggable >
+				
+					 changer ma dimension 
+			<div>
+			
+		</div>
+
+
+		
+	</body>
+</html>
